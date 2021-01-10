@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		484EF57E25AAE246007F2351 /* ContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484EF57D25AAE246007F2351 /* ContactVC.swift */; };
 		487394CB2596454300412BC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487394CA2596454300412BC4 /* AppDelegate.swift */; };
 		487394CD2596454300412BC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487394CC2596454300412BC4 /* SceneDelegate.swift */; };
-		487394CF2596454300412BC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487394CE2596454300412BC4 /* ViewController.swift */; };
 		487394D22596454300412BC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487394D02596454300412BC4 /* Main.storyboard */; };
 		487394D42596454600412BC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487394D32596454600412BC4 /* Assets.xcassets */; };
 		487394D72596454600412BC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487394D52596454600412BC4 /* LaunchScreen.storyboard */; };
+		487395012596460300412BC4 /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 487394FF2596460300412BC4 /* MyView.xib */; };
+		487395022596460300412BC4 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487395002596460300412BC4 /* MyView.swift */; };
+		48F5A89725A2390C008A0628 /* CallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F5A89625A2390C008A0628 /* CallVC.swift */; };
+		48F5A89E25A30FA1008A0628 /* KeypadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F5A89D25A30FA1008A0628 /* KeypadVC.swift */; };
+		48F5A8A125A31C63008A0628 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F5A8A025A31C63008A0628 /* LogInVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		484EF57D25AAE246007F2351 /* ContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactVC.swift; sourceTree = "<group>"; };
 		487394C72596454200412BC4 /* DialPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DialPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		487394CA2596454300412BC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		487394CC2596454300412BC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		487394CE2596454300412BC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		487394D12596454300412BC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		487394D32596454600412BC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		487394D62596454600412BC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		487394D82596454600412BC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		487394FF2596460300412BC4 /* MyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
+		487395002596460300412BC4 /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		48F5A89625A2390C008A0628 /* CallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallVC.swift; sourceTree = "<group>"; };
+		48F5A89D25A30FA1008A0628 /* KeypadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypadVC.swift; sourceTree = "<group>"; };
+		48F5A8A025A31C63008A0628 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,44 @@
 		487394C92596454300412BC4 /* DialPad */ = {
 			isa = PBXGroup;
 			children = (
+				48F5A89B25A30F71008A0628 /* ViewContorllers */,
+				487394FE2596460300412BC4 /* Reusable View */,
 				487394CA2596454300412BC4 /* AppDelegate.swift */,
 				487394CC2596454300412BC4 /* SceneDelegate.swift */,
-				487394CE2596454300412BC4 /* ViewController.swift */,
 				487394D02596454300412BC4 /* Main.storyboard */,
 				487394D32596454600412BC4 /* Assets.xcassets */,
 				487394D52596454600412BC4 /* LaunchScreen.storyboard */,
 				487394D82596454600412BC4 /* Info.plist */,
 			);
 			path = DialPad;
+			sourceTree = "<group>";
+		};
+		487394FE2596460300412BC4 /* Reusable View */ = {
+			isa = PBXGroup;
+			children = (
+				48C0FF4125A3229500AC0933 /* Number */,
+			);
+			path = "Reusable View";
+			sourceTree = "<group>";
+		};
+		48C0FF4125A3229500AC0933 /* Number */ = {
+			isa = PBXGroup;
+			children = (
+				487394FF2596460300412BC4 /* MyView.xib */,
+				487395002596460300412BC4 /* MyView.swift */,
+			);
+			path = Number;
+			sourceTree = "<group>";
+		};
+		48F5A89B25A30F71008A0628 /* ViewContorllers */ = {
+			isa = PBXGroup;
+			children = (
+				48F5A89625A2390C008A0628 /* CallVC.swift */,
+				48F5A89D25A30FA1008A0628 /* KeypadVC.swift */,
+				48F5A8A025A31C63008A0628 /* LogInVC.swift */,
+				484EF57D25AAE246007F2351 /* ContactVC.swift */,
+			);
+			path = ViewContorllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				487395012596460300412BC4 /* MyView.xib in Resources */,
 				487394D72596454600412BC4 /* LaunchScreen.storyboard in Resources */,
 				487394D42596454600412BC4 /* Assets.xcassets in Resources */,
 				487394D22596454300412BC4 /* Main.storyboard in Resources */,
@@ -137,8 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				487394CF2596454300412BC4 /* ViewController.swift in Sources */,
+				48F5A89E25A30FA1008A0628 /* KeypadVC.swift in Sources */,
+				48F5A89725A2390C008A0628 /* CallVC.swift in Sources */,
+				487395022596460300412BC4 /* MyView.swift in Sources */,
+				48F5A8A125A31C63008A0628 /* LogInVC.swift in Sources */,
 				487394CB2596454300412BC4 /* AppDelegate.swift in Sources */,
+				484EF57E25AAE246007F2351 /* ContactVC.swift in Sources */,
 				487394CD2596454300412BC4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
